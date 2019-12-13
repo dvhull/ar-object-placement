@@ -137,7 +137,7 @@ class VisualEffect;
 class WindZone; 
 namespace UI { class CanvasRenderer; } 
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
+class BoxCollider; 
 class CapsuleCollider; 
 class CharacterController; 
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
@@ -282,7 +282,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 56 non stripped classes
+	//Total: 55 non stripped classes
 	//0. Camera
 	RegisterUnityClass<Camera>("Core");
 	//1. Behaviour
@@ -393,7 +393,5 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<LevelGameManager>("Core");
 	//54. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
-	//55. BoxCollider
-	RegisterUnityClass<BoxCollider>("Physics");
 
 }
